@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca:wght@300&display=swap");
+
+* {
+  /* font-family: 'Big Shoulders Display', cursive; */
+  font-family: "Lexend Deca", sans-serif;
+}
+
+body {
+  background-color: hsl(0, 0%, 95%);
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  width: 60%;
+  align-items: stretch;
+  justify-content: space-around;
+  row-gap: 0;
+  margin: auto;
+  height: 25rem;
+  margin-top: 10rem;
+  height: 25rem;
+}
+
+img {
+    width: 55px;
+}
+
+h1 {
+  color: hsl(0, 0%, 95%);
+  font-family: 'Big Shoulders Display', cursive;
+  font-size: 40px;
+}
+
+.inner-box {
+    color: hsla(0, 0%, 100%, 0.75);
+    padding: 40px 50px;
+    font-size: 12px;
+}
+
+p {
+    width: 90%;
+    margin-top: 20px;
+    line-height: 1.8;
+}
+
+#box1 {
+  background-color: hsl(31, 77%, 52%);
+  border-radius: 7px 0px 0px 7px;
+}
+
+#box2 {
+  background-color: hsl(184, 100%, 22%);
+}
+
+#box3 {
+  background-color: hsl(179, 100%, 13%);
+  border-radius: 0px 7px 7px 0px;
+}
+
+#btn1 {
+    color: hsl(31, 77%, 52%);
+}
+#btn2 {
+    color: hsl(184, 100%, 22%);
+}
+#btn3 {
+    color: hsl(179, 100%, 13%);
+}
+
+
+#btn1:hover {
+    background-color: hsl(31, 77%, 52%);
+    color: hsl(0, 0%, 95%);
+    border: hsl(0, 0%, 95%) solid 1px;
+}
+#btn2:hover {
+    background-color: hsl(184, 100%, 22%);
+    color: hsl(0, 0%, 95%);
+    border: hsl(0, 0%, 95%) solid 1px;
+}
+#btn3:hover {
+    background-color: hsl(179, 100%, 13%);
+    color: hsl(0, 0%, 95%);
+    border: hsl(0, 0%, 95%) solid 1px;
+}
+
+button {
+  background-color: hsl(0, 0%, 95%);
+  color: black;
+  border: none;
+  border-radius: 30px;
+  margin-top: 35px;
+  padding: 9px 19px;
+}
+
+
+@media screen and (max-width: 880px) and (max-height: 1024px) {
+    .container {
+        display: flex;
+        flex-flow: column;
+        width: 80%;
+        justify-content: center;
+        box-sizing: border-box;
+        height: fit-content;
+    } 
+    #box1{
+        border-radius: 7px 7px 0px 0px
+    }
+    #box2{
+        border-radius: 0px 0px 7px 7px
+    }
+}
+
